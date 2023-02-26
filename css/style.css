@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Playfair+Display:wght@800&display=swap');
+:root{
+	--primary-color: #202020;
+	--secondary-color: #F4F7FC;
+	--grey: #a6a6a6;
+}
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Mulish', sans-serif;
+}
+
+h1,h2,h3{
+	font-family: 'Playfair Display', serif;
+	font-weight: 800;
+	color: var(--primary-color);
+	margin: 1.6rem 0;
+}
+
+p{
+	font-weight: 400;
+	margin: 1.6rem 0;
+	font-size: 1.6rem;
+	color: var(--primary-color);
+	line-height: 1.4;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 3rem;
+	}
+}
+
+h2{
+	font-size: 3rem;
+	letter-spacing: 1.5px;
+}
+
+h3{
+	font-size: 2.5rem;
+	letter-spacing: 1.5px;
+}
+
+h4{
+	font-size: 1.6rem;
+}
+
+span{
+	color: var(--grey);
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+	margin: 1.6rem 0;
+	color: var(--grey);
+	font-size: 1.6rem;
+	border-bottom: 2px dotted var(--primary-color);
+}
+
+.site-container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+hr{
+	margin: 1.6rem 0;
+}
+
+
+/* Navigation */
+nav{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: aquamarine; */
+}
+
+nav .logo{
+	width: 150px;
+	padding-top: 10px;
+}
+
+nav .menu a{
+	border-bottom: none;
+	color: var(--primary-color);
+	font-weight: 700;
+	margin-left: 2.4rem;
+}
+
+.mobile-menu{
+	display: none;
+}
+
+@media only screen and (max-width:768px){
+	.mobile-menu{
+		display: block;
+		font-size: 2.4rem;
+	}
+
+	.menu{
+		position: absolute;
+		background-color: rgb(241, 103, 103);
+		width: 100%;
+		top: 100%;
+		z-index: 99;
+		display: none;
+	}
+
+	.menu a{
+		padding: 3.2rem 0;
+		font-size: 1.8rem;
+		display: block;
+	}
+
+	.show{
+		display: block;
+	}
+}
+
+
+     /* Hero section */
+.hero{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-top: 2rem;
+	position: relative;
+	padding: 0.5rem;
+}
+
+.hero .left{
+	background-image: url(../img/star-wars.jpg);
+	background-size: cover;
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero .right{
+	background-color: #ffb758;
+}
+
+.hero .content-box{
+	position: absolute;
+	background-color: #ffffff;
+	padding: 32px;
+	width: 35%;
+	top: 50%;
+	left: 65%;
+	transform: translate(-40%,-50%);
+	opacity: 0.8;
+}
+
+.hero .content-box span{
+	color: #383737;
+}
+
+@media only screen and (max-width:1080px){
+	.hero{
+		grid-template-columns: 1fr;
+	}
+	.hero .content-box{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		background-color: #ffffff;
+		opacity: 0.8;
+	}
+
+}
+
+/* Blog */
+main{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-top: 50px;
+	gap: 60px;
+}
+
+.blog{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 48px;
+}
+
+.blog .thumbnail{
+	object-fit: contain;
+}
+
+.blog-post{
+	background-color: var(--secondary-color);
+	margin: 24px 0;
+	padding: 16px;
+}
+
+.blog-content{
+	margin-top: 2.4rem;
+}
+
+.pagination{
+	display: inline-block;
+}
+
+.pagination .active{
+	border: 1px solid var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+.pagination a{
+	color: var(--primary-color);
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 0;
+}
+
+@media only screen and (max-width:1080px){
+	.blog{
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.blog{
+		grid-template-columns: 1fr;
+		padding: 10px;
+	}
+}
+
+
+/* Aside */
+.wrapper{
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--grey);
+	margin: 5px 0;
+}
+
+.wrapper .thumb{
+	flex: 1;
+}
+.wrapper .content{
+	flex: 2;
+	padding: 1.6rem;
+}
+
+.wrapper span,p{
+	font-size: 1.4rem;
+	margin: 0;
+}
+
+@media only screen and (max-width: 1080px){
+	.site-container{
+		width: 100%;]
+		padding: 0 24px;
+	}
+
+	main{
+		grid-template-columns: 1fr;
+	}
+
+	.wrapper{
+		margin: 2.4rem 0;
+		padding: 10px;
+	}
+
+}
+
+
