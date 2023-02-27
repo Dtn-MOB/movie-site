@@ -275,56 +275,52 @@ nav{
   
 
 
-     /* Hero section */
-.hero{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	margin-top: 0.5rem;
-	position: relative;
-	padding: 0.5rem;
-}
+  /* Blog view Section */
 
-.hero .left{
-	background-image: url(../img/star-wars.jpg);
-	background-size: cover;
-	height: 60vh;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+  article .blog-view-div{
+    margin: 30px 5px 0 5px;
 
-.hero .right{
-	background-color: #ffb758;
-}
+  }
 
-.hero .content-box{
-	position: absolute;
-	background-color: #ffffff;
-	padding: 32px;
-	width: 35%;
-	top: 50%;
-	left: 65%;
-	transform: translate(-40%,-50%);
-	opacity: 0.8;
-}
+  .overview p{
+    font-size: 2rem;
+    text-align: justify;
+    margin: 5px 0;
+  }
+  
+  .cast-crew table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 10px;
+  }
 
-.hero .content-box span{
-	color: #383737;
-}
+  .cast-crew ul{
+    list-style-type: none;
+    line-height: 1.7;
+  }
 
-@media only screen and (max-width:1080px){
-	.hero{
-		grid-template-columns: 1fr;
-	}
-	.hero .content-box{
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		background-color: #ffffff;
-		opacity: 0.8;
-	}
+  .cast-crew table{
+    width: 60%;
+  }
 
-}
+  @media only screen and (max-width: 1080px){
+    .top-aside{
+        display: none;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px){
+    .cast-crew table{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+  }
+
+
+
 
 /* Blog */
 main{
