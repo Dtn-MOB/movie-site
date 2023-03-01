@@ -503,3 +503,23 @@ footer hr{
 		justify-items: start;
 	}
 }
+
+@media only screen and (max-width: 509px){
+	.footer-bottom{
+		margin: 5px;
+		flex-direction: column-reverse;
+	}
+	.footer-bottom .footer-menu ul{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.footer-bottom .footer-menu p{
+		margin: 0 5% 0 10%;
+	}
+	.footer-bottom .social-icons{
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

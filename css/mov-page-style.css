@@ -309,6 +309,13 @@ nav{
         margin-left: 10px;
     }
   }
+  
+  .overview img{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+  }
+
 
   .trailer{
 	width: 700px;
@@ -462,9 +469,9 @@ main{
 /* Footer */
 footer{
 	background-color: #212124;
-	margin-top: 100px;
+	margin-top: 30px;
 	/* border-top: 1px solid rgb(250, 18, 18); */
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 footer h3{
@@ -485,7 +492,7 @@ footer p,span,a{
 }
 
 footer hr{
-	margin: 60px 0;
+	margin: 10px 0;
 }
 
 .footer-bottom{
@@ -493,7 +500,9 @@ footer hr{
 	display: flex;
 	justify-content: space-between;
 }
-
+.footer-menu ul{
+	margin-bottom: 20px;
+}
 .footer-menu li{
 	list-style-type: none;
 	display: inline-block;
@@ -528,5 +537,25 @@ footer hr{
 	.footer-top{
 		grid-template-columns: 1fr;
 		justify-items: start;
+	}
+}
+
+@media only screen and (max-width: 509px){
+	.footer-bottom{
+		margin: 5px;
+		flex-direction: column-reverse;
+	}
+	.footer-bottom .footer-menu ul{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.footer-bottom .footer-menu p{
+		margin: 0 5% 0 10%;
+	}
+	.footer-bottom .social-icons{
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
 	}
 }
