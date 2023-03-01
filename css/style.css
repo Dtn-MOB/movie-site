@@ -285,7 +285,7 @@ nav{
 }
 
 .hero .left{
-	background-image: url(../img/star-wars.jpg);
+	background-image: url(../img/home-poster/waltair-veerayya.jpg);
 	background-size: cover;
 	height: 60vh;
 	background-repeat: no-repeat;
@@ -321,7 +321,14 @@ nav{
 		transform: translate(-50%, -50%);
 		width: 80%;
 		background-color: #ffffff;
-		opacity: 0.8;
+		opacity: 0.6;
+	}
+
+}
+
+@media only screen and (max-width:768px){
+	.hero .content-box{
+		display: none;
 	}
 
 }
@@ -410,7 +417,7 @@ main{
 
 @media only screen and (max-width: 1080px){
 	.site-container{
-		width: 100%;]
+		width: 100%;
 		padding: 0 24px;
 	}
 

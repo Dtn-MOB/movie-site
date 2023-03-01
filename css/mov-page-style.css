@@ -72,7 +72,7 @@ a{
 	margin: 1.6rem 0;
 	color: var(--grey);
 	font-size: 1.6rem;
-	border-bottom: 2px dotted var(--primary-color);
+	/* border-bottom: 2px dotted var(--primary-color); */
 }
 
 .site-container{
@@ -281,13 +281,45 @@ nav{
     margin: 30px 5px 0 5px;
 
   }
-
-  .overview p{
-    font-size: 2rem;
-    text-align: justify;
+  .blog-view p{
+	font-size: 2rem;
+	text-align: justify;
     margin: 5px 0;
   }
-  
+  .table-content{
+	width: 60%;
+	/* border: 1px solid brown; */
+  }
+  .table-content a{
+	display: block;
+	margin-left: 40px;
+  }
+  .table-content span{
+	color: #14181f;
+	text-decoration: none;
+  }
+  .table-content a:hover{
+	text-decoration: underline;
+	color: red;
+  }
+
+  @media only screen and (max-width: 768px){
+    .table-content a{
+        width: 80%;
+        margin-left: 10px;
+    }
+  }
+
+  .trailer{
+	width: 700px;
+	height: 393.75px;
+  }
+  @media only screen and (max-width: 768px){
+	.trailer{
+		width: auto;
+	}
+  }
+
   .cast-crew table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -319,6 +351,29 @@ nav{
 
   }
 
+  .download-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .btn {
+	background-color: DodgerBlue;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+	background-color: RoyalBlue;
+  }
+
+
+
 
 
 
@@ -326,7 +381,7 @@ nav{
 main{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	gap: 60px;
 }
 
@@ -348,23 +403,6 @@ main{
 
 .blog-content{
 	margin-top: 2.4rem;
-}
-
-.pagination{
-	display: inline-block;
-}
-
-.pagination .active{
-	border: 1px solid var(--primary-color);
-	background-color: var(--secondary-color);
-}
-
-.pagination a{
-	color: var(--primary-color);
-	float: left;
-	padding: 8px 16px;
-	text-decoration: none;
-	border: 0;
 }
 
 @media only screen and (max-width:1080px){
