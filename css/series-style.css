@@ -285,7 +285,7 @@ nav{
 }
 
 .hero .left{
-	background-image: url(../img/home-poster/taaza-khabar.jpg);
+	background-image: url(../img/home-poster/farzi.jpg);
 	background-size: cover;
 	height: 60vh;
 	background-repeat: no-repeat;
@@ -293,7 +293,7 @@ nav{
 }
 
 .hero .right{
-	background-color: #fff279;
+	background-color: #b1f1ce;
 }
 
 .hero .content-box{

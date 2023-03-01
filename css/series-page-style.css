@@ -275,69 +275,120 @@ nav{
   
 
 
-     /* Hero section */
-.hero{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	margin-top: 0.5rem;
-	position: relative;
-	padding: 0.5rem;
-}
+  /* Blog view Section */
 
-.hero .left{
-	background-image: url(../img/home-poster/taaza-khabar.jpg);
-	background-size: cover;
-	height: 60vh;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+  article .blog-view-div{
+    margin: 30px 5px 0 5px;
 
-.hero .right{
-	background-color: #fff279;
-}
+  }
+  .blog-view p{
+	font-size: 2rem;
+	text-align: justify;
+    margin: 5px 0;
+  }
+  .table-content{
+	width: 60%;
+	/* border: 1px solid brown; */
+  }
+  .table-content a{
+	display: block;
+	margin-left: 40px;
+  }
+  .table-content span{
+	color: #14181f;
+	text-decoration: none;
+  }
+  .table-content a:hover{
+	text-decoration: underline;
+	color: red;
+  }
 
-.hero .content-box{
-	position: absolute;
-	background-color: #ffffff;
-	padding: 32px;
-	width: 35%;
-	top: 50%;
-	left: 65%;
-	transform: translate(-40%,-50%);
-	opacity: 0.8;
-}
+  @media only screen and (max-width: 768px){
+    .table-content a{
+        width: 80%;
+        margin-left: 10px;
+    }
+  }
+  
+  .overview img{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+  }
 
-.hero .content-box span{
-	color: #383737;
-}
 
-@media only screen and (max-width:1080px){
-	.hero{
-		grid-template-columns: 1fr;
+  .trailer{
+	width: 700px;
+	height: 393.75px;
+  }
+  @media only screen and (max-width: 768px){
+	.trailer{
+		width: auto;
 	}
-	.hero .content-box{
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		background-color: #ffffff;
-		opacity: 0.6;
-	}
+  }
 
-}
+  .cast-crew table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 10px;
+  }
 
-@media only screen and (max-width:768px){
-	.hero .content-box{
-		display: none;
-	}
+  .cast-crew ul{
+    list-style-type: none;
+    line-height: 1.7;
+  }
 
-}
+  .cast-crew table{
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 1080px){
+    .top-aside{
+        display: none;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px){
+    .cast-crew table{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+  }
+
+  .download-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .btn {
+	background-color: DodgerBlue;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+	background-color: RoyalBlue;
+  }
+
+
+
+
+
 
 /* Blog */
 main{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	gap: 60px;
 }
 
@@ -359,23 +410,6 @@ main{
 
 .blog-content{
 	margin-top: 2.4rem;
-}
-
-.pagination{
-	display: inline-block;
-}
-
-.pagination .active{
-	border: 1px solid var(--primary-color);
-	background-color: var(--secondary-color);
-}
-
-.pagination a{
-	color: var(--primary-color);
-	float: left;
-	padding: 8px 16px;
-	text-decoration: none;
-	border: 0;
 }
 
 @media only screen and (max-width:1080px){
@@ -417,7 +451,7 @@ main{
 
 @media only screen and (max-width: 1080px){
 	.site-container{
-		width: 100%;
+		width: 100%;]
 		padding: 0 24px;
 	}
 
@@ -435,9 +469,9 @@ main{
 /* Footer */
 footer{
 	background-color: #212124;
-	margin-top: 100px;
+	margin-top: 30px;
 	/* border-top: 1px solid rgb(250, 18, 18); */
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 footer h3{
@@ -458,7 +492,7 @@ footer p,span,a{
 }
 
 footer hr{
-	margin: 60px 0;
+	margin: 10px 0;
 }
 
 .footer-bottom{
@@ -466,7 +500,9 @@ footer hr{
 	display: flex;
 	justify-content: space-between;
 }
-
+.footer-menu ul{
+	margin-bottom: 20px;
+}
 .footer-menu li{
 	list-style-type: none;
 	display: inline-block;
