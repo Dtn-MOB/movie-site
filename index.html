@@ -30,11 +30,17 @@
 		<div class="cancel-icon">
 		   <span class="icofont-close"></span>
 		</div>
-		<form action="#">
-		   <input type="search" class="search-data" placeholder="Search" required>
-		   <button type="submit" class="icofont-ui-search"></button>
+		<form id="searchForm">
+			<input type="search" name="searchInput" class="search-data" placeholder="Search" required>
+			<button type="submit" class="icofont-ui-search"></button>
+			<div class="search-result" id="searchResult">
+			</div>
 		</form>
 	 </nav>
+	 
+
+	 <!-- Search Result Dropdown Div -->
+
 	 
 
 	<!-- HERO SECTION -->
@@ -287,5 +293,6 @@
 
 
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
 </body>
 </html>

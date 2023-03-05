@@ -153,7 +153,31 @@ nav{
 	border: none;
 	font-weight: 500;
 	background: none;
+}
+
+.search-result{
+  	top: 55px;
+  	right: 7%;
+  	visibility: hidden;
+  	width: 21%;
+  	background-color: white;
+  	z-index: 1;
+  	position: absolute;
+  	overflow-y: auto;
+ 	border-radius: 7px;
+ 	padding: 10px;
   }
+
+  @media only screen and (max-width:1080px){
+	.search-result{
+		right: 50px;
+		width: 200px;
+	/* margin: 0 10px; */
+	/* height: 0vh; */
+		padding: 10px;
+		}
+  }
+
   nav form button{
 	padding: 0 15px;
 	color: #fff;
@@ -182,7 +206,7 @@ nav{
   nav .search-icon{
 	display: none;
   }
-  @media (max-width: 1245px) {
+  @media only screen and (max-width: 1245px) {
 	nav{
 	  padding: 0 50px;
 	}
@@ -273,6 +297,10 @@ nav{
 	}
   }
   
+  	/* Search Result Div */
+  	
+
+
 
 
      /* Hero section */
