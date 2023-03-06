@@ -227,6 +227,29 @@ nav{
 	  transition: top 0.3s ease, opacity 0.1s ease;
 	  z-index: 1;
 	}
+
+	.search-result{
+		top: 55px;
+		right: 7%;
+		visibility: hidden;
+		width: 21%;
+		background-color: white;
+		z-index: 1;
+		position: absolute;
+		overflow-y: auto;
+	   border-radius: 7px;
+	   padding: 10px;
+	}
+  
+	@media only screen and (max-width:1080px){
+	  .search-result{
+		  right: 50px;
+		  width: 200px;
+		  padding: 10px;
+		  }
+	}
+
+
 	nav form.active{
 	  top: 95px;
 	  opacity: 1;
